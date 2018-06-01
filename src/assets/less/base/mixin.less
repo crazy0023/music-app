@@ -1,0 +1,21 @@
+
+.bg-image(@url) {
+  background-image:~"url('@{url}@2x.png')";
+  @media screen and (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio:3) {
+    background-image: ~"url('@{url}@3x.png')";
+  }
+}
+.el() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.readus(@s: 50%) {
+  border-radius: @s;
+}
+.centerr() {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
