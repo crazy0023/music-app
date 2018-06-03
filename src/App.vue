@@ -2,7 +2,9 @@
   <div id="app" v-cloak>
     <Header></Header>
     <tab></tab>
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
