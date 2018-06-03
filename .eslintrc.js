@@ -52,5 +52,6 @@ module.exports = {
     'import/first': 0,
     'linebreak-style': 0,
     'no-trailing-spaces': 0,
+    'eol-last': 0
   }
 }

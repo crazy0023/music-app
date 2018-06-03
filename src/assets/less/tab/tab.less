@@ -1,0 +1,20 @@
+.tab {
+    height: @size * 4.4;
+    line-height: @size * 4.4;
+    font-size: @font-size-medium;
+    display: flex;
+    .tab-item {
+        flex: 1;
+        text-align: center;
+        .tab-link {
+            padding-bottom: @size * .5;
+            color: @color-text-l;
+        }
+        &.router-link-active {
+            .tab-link {
+                color: @color-theme;
+                border-bottom: 2px solid @color-theme;
+            }
+        }
+    }
+}
