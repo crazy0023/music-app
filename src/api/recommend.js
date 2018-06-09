@@ -22,7 +22,7 @@ export function getDiscList() {
     hostUin: 0,
     sin: 0,
     ein: 29,
-    sortId: 5,
+    // sortId: 5,
     needNewCode: 0,
     categoryId: 10000000,
     rnd: Math.random(),
@@ -32,6 +32,7 @@ export function getDiscList() {
   return axios.get(url, {
     params: data
   }).then((res) => {
+    console.log(res)
     return Promise.resolve(res.data)
   })
 }
