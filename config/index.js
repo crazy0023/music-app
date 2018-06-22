@@ -11,10 +11,10 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api/getDiscList': {
+      '/api': {
       target: 'https://c.y.qq.com/splcloud/fcgi-bin/fcg_get_diss_by_tag.fcg',
-      bypass: function(req) {
-        req.headers.Referer = 'https://c.y.qq.com/'
+      bypass: function(req, res, proxyOptions) {
+        req.headers.referer = 'https://c.y.qq.com/'
         req.headers.host = 'c.y.qq.com'
       },
       changeOrigin: true,

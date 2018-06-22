@@ -6,12 +6,15 @@ import App from './App'
 import router from './router'
 import Container from '@/components/Container'
 import fastclick from 'fastclick'
+import VueLazyLoad from 'vue-lazyload'
 
 
 
 fastclick.attach(document.body)
 
-
+Vue.use(VueLazyLoad, {
+  loading: require('@/assets/images/logo@2x.png')
+})
 Vue.config.productionTip = false
 
 // 注册全局组件

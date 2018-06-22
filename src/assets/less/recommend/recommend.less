@@ -1,12 +1,12 @@
 .recommend {
     position: fixed;
     width: 100%;
-    // height: @size * 8.8;
-    // bottom: 0;
+    top: 88px;
+    bottom: 0;
     .recommend-content {
         height: 100%;
         overflow: hidden;
-        .slider-wrapper {
+        .silider-wrapper {
             position: relative;
             width: 100%;
             overflow: hidden;
@@ -51,7 +51,10 @@
             position: absolute;
             width: 100%;
             top: 50%;
-            transform: translate(-50%)
+            transform: translateY(-50%);
+            img {
+                display: inline-block
+            }
         }
     }
 }
