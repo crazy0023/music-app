@@ -13,7 +13,7 @@ import VueLazyLoad from 'vue-lazyload'
 fastclick.attach(document.body)
 
 Vue.use(VueLazyLoad, {
-  loading: require('@/assets/images/logo@2x.png')
+  loading: require('@/assets/images/zhouyuqiao.jpg')
 })
 Vue.config.productionTip = false
 
